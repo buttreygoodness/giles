@@ -82,7 +82,7 @@ namespace GILES
 
 		private bool eatMouse = false;
 
-		private Camera cam;
+		private static Camera cam;
 
 		private Vector3 pivot = Vector3.zero;
 		public Vector3 GetPivot() { return pivot; }
@@ -111,7 +111,12 @@ namespace GILES
 			pb_InputManager.AddKeyInUseDelegate( IsUsingKey );
 			
 			cam = GetComponent<Camera>();
-			distanceToCamera = Vector3.Distance(pivot, Camera.main.transform.position);
+			// distanceToCamera = Vector3.Distance(pivot, Camera.main.transform.position);
+			distanceToCamera = Vector3.Distance(pivot, cam.transform.position);
+		}
+
+		public static Camera GetCamera () {
+			return cam;
 		}
 
 		public GameObject plane;

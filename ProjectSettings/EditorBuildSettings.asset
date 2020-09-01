@@ -7,7 +7,18 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/GILES/Scenes/Main Menu.unity
-  - enabled: 1
+    guid: 6864c384fd52d834c9000e8f52455d3c
+  - enabled: 0
     path: Assets/GILES/Scenes/Level Editor.unity
+    guid: b0171d1d9fa113e4aa973deb5506ce6b
+  - enabled: 1
+    path: Assets/GILES/Scenes/Level Editor_MRTK.unity
+    guid: 1522e0ee39fc48241ab24f6790a3020b
   - enabled: 1
     path: Assets/GILES/Scenes/Empty Scene.unity
+    guid: e0421fea30c15da478141928e734e31c
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b68ab6c060711694b8df71eda9fcc909,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d4087ce16fdeedb489b4403f613cc8ac,
+      type: 2}

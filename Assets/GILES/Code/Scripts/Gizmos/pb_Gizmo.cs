@@ -45,7 +45,8 @@ namespace GILES
 
 		private void Awake()
 		{
-			cam = Camera.main.transform;
+			// cam = Camera.main.transform;
+			cam = pb_SceneCamera.GetCamera().transform;
 			trs = transform;
 		}
 

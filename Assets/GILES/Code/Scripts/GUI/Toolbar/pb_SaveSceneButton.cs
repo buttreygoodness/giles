@@ -41,11 +41,11 @@ namespace GILES
 			if(!san.EndsWith(".json"))
 				san += ".json";
 
-			if(!pb_FileUtility.IsValidPath(san, ".json"))
-			{
-				Debug.LogWarning(san + " is not a valid path.");
-				return;
-			}
+			// if(!pb_FileUtility.IsValidPath(san, ".json"))
+			// {
+			// 	Debug.LogWarning(san + " is not a valid path.");
+			// 	return;
+			// }
 
 			pb_FileUtility.SaveFile(san, pb_Scene.SaveLevel());
 			

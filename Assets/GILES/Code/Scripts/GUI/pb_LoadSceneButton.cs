@@ -38,11 +38,11 @@ namespace GILES
 		{
 			string san = pb_FileUtility.SanitizePath(path);
 
-			if(!pb_FileUtility.IsValidPath(san, ".json"))
-			{
-				Debug.LogWarning(san + " not found, or file is not a JSON scene.");
-				return;
-			}
+			// if(!pb_FileUtility.IsValidPath(san, ".json"))
+			// {
+			// 	Debug.LogWarning(san + " not found, or file is not a JSON scene.");
+			// 	return;
+			// }
 
 			string level = pb_FileUtility.ReadFile(san);	
 

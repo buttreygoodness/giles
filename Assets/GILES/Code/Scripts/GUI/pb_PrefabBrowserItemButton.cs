@@ -157,7 +157,8 @@ namespace GILES.Interface
 		 */
 		void Instantiate()
 		{
-			Camera cam = Camera.main;
+			// Camera cam = Camera.main;
+			Camera cam = pb_SceneCamera.GetCamera();
 			GameObject go;
 
 			Vector3 org = pb_Selection.activeGameObject == null ? Vector3.zero : pb_Selection.activeGameObject.transform.position;

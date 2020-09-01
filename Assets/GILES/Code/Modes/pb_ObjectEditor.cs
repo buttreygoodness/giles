@@ -186,7 +186,8 @@ namespace GILES
 				}
 				else if( !IsMouseInUse() )
 				{
-					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+					// Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+					Ray ray = pb_SceneCamera.GetCamera().ScreenPointToRay(Input.mousePosition);
 
 					GameObject hit = pb_HandleUtility.ObjectRaycast(ray, pb_Scene.Children());
 					
@@ -287,7 +288,8 @@ namespace GILES
 
 			foreach(GameObject go in pb_Scene.Children())
 			{
-				Vector2 pos = Camera.main.WorldToScreenPoint(go.transform.position);
+				// Vector2 pos = Camera.main.WorldToScreenPoint(go.transform.position);
+				Vector2 pos = pb_SceneCamera.GetCamera().WorldToScreenPoint(go.transform.position);
 
 				if(screenRect.Contains(pos))
 				{

@@ -7,6 +7,12 @@
 /Assets/ProCore*
 /Assets/Debug*
 /Assets/Plugins*
+/Assets/MRTK*
+/Assets/Oculus*
+/Assets/KB3D*
+/Assets/Thirdparty*
+/Assets/AssetBundles*
+
 
 /docs/site*
 

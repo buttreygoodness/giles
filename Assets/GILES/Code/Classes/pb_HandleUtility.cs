@@ -150,7 +150,8 @@ namespace GILES
 		 */
 		public static float GetHandleSize(Vector3 position)
 		{
-			Camera cam = Camera.main;
+			// Camera cam = Camera.main;
+			Camera cam = pb_SceneCamera.GetCamera();
 			if(!cam) return 1f;
 			Transform t = cam.transform;
 			float z = Vector3.Dot(position-t.position, cam.transform.forward);

@@ -19,7 +19,8 @@ public class pb_SelectionHandle : pb_MonoBehaviourSingleton<pb_SelectionHandle>
 	private Transform _trs;
 	private Transform trs { get { if(_trs == null) _trs = gameObject.GetComponent<Transform>(); return _trs; } }
 	private Camera _cam;
-	private Camera cam { get { if(_cam == null) _cam = Camera.main; return _cam; } }
+	// private Camera cam { get { if(_cam == null) _cam = Camera.main; return _cam; } }
+	private Camera cam { get { if(_cam == null) _cam = pb_SceneCamera.GetCamera(); return _cam; } }
 
 	const int MAX_DISTANCE_TO_HANDLE = 15;
 
